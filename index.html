@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard Hasil Survei Persona Mahasiswa Sains Data">
+  <title>Dashboard Survei Persona - Sains Data</title>
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>📊 Dashboard Survei Persona</h1>
+      <p>Program Studi Sains Data</p>
+      <div class="badge" id="last-updated">Memuat data...</div>
+    </header>
+
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <p>Mengambil data dari Supabase...</p>
+    </div>
+
+    <div id="dashboard" style="display:none">
+      <!-- Global Filter -->
+      <div class="filter-bar" id="filter-bar">
+        <div class="filter-row">
+          <span class="filter-label">🎓 Filter Semester:</span>
+          <div class="filter-chips" id="semester-chips">
+            <button class="chip active" data-semester="" onclick="setGlobalSemester('')">Semua</button>
+          </div>
+        </div>
+        <div class="filter-divider"></div>
+        <div class="filter-row">
+          <span class="filter-label">🏫 Filter Kelas:</span>
+          <div class="filter-chips" id="kelas-chips">
+            <button class="chip active" data-kelas="" onclick="setGlobalKelas('')">Semua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid" id="stats-grid"></div>
+
+      <!-- Charts Row 1 -->
+      <div class="charts-grid">
+        <div class="chart-card"><h3>👤 Jenis Kelamin</h3><canvas id="chart-gender"></canvas><div class="chart-summary" id="summary-gender"></div></div>
+        <div class="chart-card"><h3>📅 Distribusi Usia</h3><canvas id="chart-usia"></canvas><div class="chart-summary" id="summary-usia"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>🎓 Semester</h3><canvas id="chart-semester"></canvas><div class="chart-summary" id="summary-semester"></div></div>
+        <div class="chart-card"><h3>📐 Kemampuan Matematika</h3><canvas id="chart-math"></canvas><div class="chart-summary" id="summary-math"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>🎓 Asal Jurusan</h3><canvas id="chart-jurusan"></canvas><div class="chart-summary" id="summary-jurusan"></div></div>
+        <div class="chart-card"><h3>🏫 Asal Sekolah</h3><canvas id="chart-sekolah"></canvas><div class="chart-summary" id="summary-sekolah"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>💻 Pernah Coding</h3><canvas id="chart-coding"></canvas><div class="chart-summary" id="summary-coding"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>🐍 Bahasa Pemrograman</h3><canvas id="chart-lang"></canvas><div class="chart-summary" id="summary-lang"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>🎯 Motivasi</h3><canvas id="chart-motivasi"></canvas><div class="chart-summary" id="summary-motivasi"></div></div>
+        <div class="chart-card"><h3>💡 Pemahaman Sains Data</h3><canvas id="chart-pemahaman"></canvas><div class="chart-summary" id="summary-pemahaman"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>🔬 Bidang Minat</h3><canvas id="chart-bidang"></canvas><div class="chart-summary" id="summary-bidang"></div></div>
+        <div class="chart-card"><h3>🛠️ Tools Dikuasai</h3><canvas id="chart-tools"></canvas><div class="chart-summary" id="summary-tools"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>⚡ Kesulitan</h3><canvas id="chart-kesulitan"></canvas><div class="chart-summary" id="summary-kesulitan"></div></div>
+        <div class="chart-card"><h3>💼 Industri Diminati</h3><canvas id="chart-industri"></canvas><div class="chart-summary" id="summary-industri"></div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><h3>📱 Media Sosial</h3><canvas id="chart-medsos"></canvas><div class="chart-summary" id="summary-medsos"></div></div>
+        <div class="chart-card"><h3>🌐 Penggunaan Internet</h3><canvas id="chart-internet"></canvas><div class="chart-summary" id="summary-internet"></div></div>
+      </div>
+
+      <!-- Pertanyaan Terbuka: Alasan -->
+      <div class="section open-response-section">
+        <div class="section-title"><span class="icon">✍️</span> Alasan Memilih Sains Data</div>
+        <div class="open-response-grid">
+          <div class="keyword-cloud-card">
+            <h4>🏷️ Kata Kunci Populer</h4>
+            <div class="keyword-cloud" id="keywords-alasan"></div>
+          </div>
+          <div class="responses-card">
+            <h4>💬 Respons Mahasiswa <span class="response-count" id="count-alasan"></span></h4>
+            <div class="responses-scroll" id="responses-alasan"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pertanyaan Terbuka: Pengalaman -->
+      <div class="section open-response-section">
+        <div class="section-title"><span class="icon">📖</span> Pengalaman Belajar</div>
+        <div class="open-response-grid">
+          <div class="keyword-cloud-card">
+            <h4>🏷️ Kata Kunci Populer</h4>
+            <div class="keyword-cloud" id="keywords-pengalaman"></div>
+          </div>
+          <div class="responses-card">
+            <h4>💬 Respons Mahasiswa <span class="response-count" id="count-pengalaman"></span></h4>
+            <div class="responses-scroll" id="responses-pengalaman"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pertanyaan Terbuka: Kekhawatiran -->
+      <div class="section open-response-section">
+        <div class="section-title"><span class="icon">😟</span> Kekhawatiran Mahasiswa</div>
+        <div class="open-response-grid">
+          <div class="keyword-cloud-card">
+            <h4>🏷️ Kata Kunci Populer</h4>
+            <div class="keyword-cloud" id="keywords-kekhawatiran"></div>
+          </div>
+          <div class="responses-card">
+            <h4>💬 Respons Mahasiswa <span class="response-count" id="count-kekhawatiran"></span></h4>
+            <div class="responses-scroll" id="responses-kekhawatiran"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Table -->
+      <div class="section">
+        <div class="section-title"><span class="icon">📋</span> Data Responden</div>
+        <div class="toolbar">
+          <input type="text" id="search" placeholder="🔍 Cari NIM atau Nama...">
+          <select id="filter-semester"><option value="">Semua Semester</option></select>
+          <select id="filter-gender"><option value="">Semua Gender</option><option>Laki-laki</option><option>Perempuan</option></select>
+          <button class="btn-export" onclick="exportCSV()">📥 Export CSV</button>
+          <span class="count" id="row-count"></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="table-head"></thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Insight Section -->
+      <div class="section insight-section" id="insight-section">
+        <div class="section-title"><span class="icon">💡</span> Insight & Analisis</div>
+        <div id="insight-content"></div>
+      </div>
+    </div>
+
+    <div id="empty" class="empty" style="display:none">
+      <div class="icon">📭</div>
+      <p>Belum ada data responden.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

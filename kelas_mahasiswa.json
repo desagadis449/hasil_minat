@@ -1,0 +1,486 @@
+{
+  "24110500001": {
+    "kelas_full": "4 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "24110500002": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500003": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500004": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500005": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500007": {
+    "kelas_full": "4 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "24110500008": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500009": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500010": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500011": {
+    "kelas_full": "4 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "24110500012": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500013": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500014": {
+    "kelas_full": "4 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "24110500016": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500017": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500019": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500020": {
+    "kelas_full": "4 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "24110500023": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24110500024": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500025": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500029": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24110500030": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24110500032": {
+    "kelas_full": "4 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "24120500001": {
+    "kelas_full": "4 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "24120500003": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500005": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500006": {
+    "kelas_full": "4 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "24120500008": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500011": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500012": {
+    "kelas_full": "4 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "24120500013": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500014": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500018": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500022": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500023": {
+    "kelas_full": "4 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "24120500024": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500026": {
+    "kelas_full": "4 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "24120500027": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500030": {
+    "kelas_full": "4 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120500031": {
+    "kelas_full": "4 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "24120510002": {
+    "kelas_full": "3 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "24120510003": {
+    "kelas_full": "3 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120510004": {
+    "kelas_full": "3 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120510006": {
+    "kelas_full": "3 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120510007": {
+    "kelas_full": "3 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120510012": {
+    "kelas_full": "3 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120510013": {
+    "kelas_full": "3 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "24120510014": {
+    "kelas_full": "3 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "24130500001": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "24130500003": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "24130500004": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "24130500005": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "24130500006": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "24130500007": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "24130500009": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "24130500010": {
+    "kelas_full": "4 Sains Data Aksel (Online)",
+    "kelas_type": "Aksel"
+  },
+  "25110500001": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500002": {
+    "kelas_full": "2 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "25110500003": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500004": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500005": {
+    "kelas_full": "2 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "25110500006": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500007": {
+    "kelas_full": "2 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "25110500008": {
+    "kelas_full": "2 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "25110500009": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500011": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500013": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500015": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500016": {
+    "kelas_full": "2 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "25110500017": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500018": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500019": {
+    "kelas_full": "2 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "25110500020": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500021": {
+    "kelas_full": "2 Sains Data Reg (Online)",
+    "kelas_type": "Reg"
+  },
+  "25110500022": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500023": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500024": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500025": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500026": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25110500027": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500029": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500030": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500032": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500033": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25110500034": {
+    "kelas_full": "2 Sains Data Reg (Offline)",
+    "kelas_type": "Reg"
+  },
+  "25120500001": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500002": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500003": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500004": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500005": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500006": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500007": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500008": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500009": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500010": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500011": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500012": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500015": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500016": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500017": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500019": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500020": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500023": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500024": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500025": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500026": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500028": {
+    "kelas_full": "2 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120500029": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120500032": {
+    "kelas_full": "2 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510001": {
+    "kelas_full": "1 Sains Data Pro (Offline)",
+    "kelas_type": "Pro"
+  },
+  "25120510002": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510003": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510004": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510005": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510006": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510007": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510008": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510009": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510010": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510011": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  },
+  "25120510012": {
+    "kelas_full": "1 Sains Data Pro (Online)",
+    "kelas_type": "Pro"
+  }
+}

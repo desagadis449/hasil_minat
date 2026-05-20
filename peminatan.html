@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard Peminatan Konsentrasi Mahasiswa Semester 5 - Program Studi Sains Data">
+  <title>Dashboard Peminatan Konsentrasi — Sains Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="peminatan.css">
+</head>
+<body>
+
+  <!-- Animated Background Orbs -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-glow"></div>
+      <div class="header-content">
+        <div class="header-icon">🎯</div>
+        <h1>Dashboard Peminatan Konsentrasi</h1>
+        <p class="header-sub">Program Studi Sains Data — Semester 5</p>
+        <div class="header-badges">
+          <div class="badge badge-primary" id="badge-total">Memuat data...</div>
+          <div class="badge badge-ghost" id="badge-date"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Loading State -->
+    <div id="loading" class="loading-screen">
+      <div class="loading-card">
+        <div class="loading-spinner">
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+        </div>
+        <p class="loading-text">Mengambil data peminatan...</p>
+        <p class="loading-sub">Menghubungkan ke Supabase</p>
+      </div>
+    </div>
+
+    <!-- Dashboard Content (hidden until data loads) -->
+    <div id="dashboard" style="display:none">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" id="filter-bar">
+        <div class="filter-row">
+          <span class="filter-label">🏫 Filter Kelas:</span>
+          <div class="filter-chips" id="kelas-chips">
+            <button class="chip active" data-kelas="" onclick="setFilter('')">Semua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Stats -->
+      <div class="hero-stats" id="hero-stats"></div>
+
+      <!-- Main Concentration Distribution -->
+      <div class="main-chart-section">
+        <div class="chart-main-card">
+          <div class="chart-main-header">
+            <h2>📊 Distribusi Peminatan Konsentrasi</h2>
+            <p>Sebaran pilihan konsentrasi mahasiswa semester 5</p>
+          </div>
+          <div class="chart-main-body">
+            <div class="chart-donut-wrap">
+              <canvas id="chart-main-donut"></canvas>
+            </div>
+            <div class="chart-legend-cards" id="legend-cards"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="charts-grid-2">
+        <div class="chart-card">
+          <h3>📈 Konsentrasi per Kelas</h3>
+          <canvas id="chart-kelas-bar"></canvas>
+          <div class="chart-summary" id="summary-kelas"></div>
+        </div>
+        <div class="chart-card">
+          <h3>⏱️ Timeline Pengisian</h3>
+          <canvas id="chart-timeline"></canvas>
+          <div class="chart-summary" id="summary-timeline"></div>
+        </div>
+      </div>
+
+      <!-- Concentration Detail Cards -->
+      <div class="section">
+        <div class="section-title"><span class="icon">🎓</span> Detail Konsentrasi</div>
+        <div class="conc-detail-grid" id="conc-detail-grid"></div>
+      </div>
+
+      <!-- Alasan Section -->
+      <div class="section open-response-section">
+        <div class="section-title"><span class="icon">✍️</span> Alasan Memilih Konsentrasi</div>
+        <div class="open-response-grid">
+          <div class="keyword-cloud-card">
+            <h4>🏷️ Kata Kunci Populer</h4>
+            <div class="keyword-cloud" id="keywords-alasan"></div>
+          </div>
+          <div class="responses-card">
+            <h4>💬 Respons Mahasiswa <span class="response-count" id="count-alasan"></span></h4>
+            <div class="alasan-filter-row" id="alasan-filter-row"></div>
+            <div class="responses-scroll" id="responses-alasan"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Participation Progress -->
+      <div class="section">
+        <div class="section-title"><span class="icon">📋</span> Progress Partisipasi</div>
+        <div class="participation-grid" id="participation-grid"></div>
+      </div>
+
+      <!-- Data Table -->
+      <div class="section">
+        <div class="section-title"><span class="icon">📋</span> Data Responden</div>
+        <div class="toolbar">
+          <input type="text" id="search" placeholder="🔍 Cari NIM atau Nama...">
+          <select id="filter-konsentrasi">
+            <option value="">Semua Konsentrasi</option>
+            <option value="data_engineering">Data Engineering</option>
+            <option value="ai_ml">AI & Machine Learning</option>
+            <option value="business_intelligence">Business Intelligence</option>
+          </select>
+          <button class="btn-export" onclick="exportCSV()">📥 Export CSV</button>
+          <span class="count" id="row-count"></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="table-head"></thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Insights -->
+      <div class="section insight-section" id="insight-section">
+        <div class="section-title"><span class="icon">💡</span> Insight & Analisis</div>
+        <div id="insight-content"></div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty" class="empty-state" style="display:none">
+      <div class="empty-icon">📭</div>
+      <h3>Belum Ada Data Peminatan</h3>
+      <p>Mahasiswa belum mengisi formulir peminatan konsentrasi.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Dashboard Peminatan Konsentrasi — Program Studi Sains Data © 2026</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="peminatan.js"></script>
+</body>
+</html>
